@@ -68,9 +68,9 @@ export default function Register() {
           <Logo />
           {smUp && (
             <Typography variant="body2" sx={{ mt: { md: -2 } }}>
-              Already have an account? {''}
+              Zaten hesabınız var mı? {''}
               <Link variant="subtitle2" component={RouterLink} to="/login">
-                Login
+                Giriş Yapın
               </Link>
             </Typography>
           )}
@@ -78,35 +78,39 @@ export default function Register() {
 
         {mdUp && (
           <SectionStyle>
-            <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Manage the job more effectively with Minimal
+            <Typography variant="h3" sx={{ px: 5, mt: 16, mb: 1 }}>
+              Kaydolun.
             </Typography>
-            <img alt="register" src="/static/illustrations/illustration_register.png" />
+            <Typography variant="h4" sx={{ px: 5, mt: 0, mb: 1 }}>
+              Hızlı ve kolay 🙂
+            </Typography>
+            <img alt="register" src="/static/illustrations/illustration_register.jpg" />
           </SectionStyle>
         )}
 
         <Container>
           <ContentStyle>
             <Typography variant="h4" gutterBottom>
-              Get started absolutely free.
+              AirBus'a Kaydolun
             </Typography>
 
-            <Typography sx={{ color: 'text.secondary', mb: 5 }}>Free forever. No credit card needed.</Typography>
+            <Typography sx={{ color: 'text.secondary', mb: 5 }}>Bilgilerinizi aşağıya giriniz.</Typography> 
 
             <AuthSocial />
 
             <RegisterForm />
 
             <Typography variant="body2" align="center" sx={{ color: 'text.secondary', mt: 3 }}>
-              By registering, I agree to Minimal&nbsp;
+              Kaydolarak,&nbsp;
               <Link underline="always" color="text.primary" href="#">
-                Terms of Service
+                Asgari Hizmet Koşullarını
               </Link>
-              {''}and{''}
+              {''} ve {''}
               <Link underline="always" color="text.primary" href="#">
-                Privacy Policy
+                Gizlilik Politikasını
               </Link>
-              .
+              {''} kabul ediyorum. {''}
+              
             </Typography>
 
             {!smUp && (

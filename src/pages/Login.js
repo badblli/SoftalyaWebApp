@@ -62,16 +62,16 @@ export default function Login() {
   const mdUp = useResponsive('up', 'md');
 
   return (
-    <Page title="Login">
+    <Page title="Giriş">
       <RootStyle>
         <HeaderStyle>
           <Logo />
 
           {smUp && (
             <Typography variant="body2" sx={{ mt: { md: -2 } }}>
-              Don’t have an account? {''}
+              Hesabınız yok mu? {''}
               <Link variant="subtitle2" component={RouterLink} to="/register">
-                Get started
+                Yeni hesap oluştur
               </Link>
             </Typography>
           )}
@@ -79,20 +79,23 @@ export default function Login() {
 
         {mdUp && (
           <SectionStyle>
-            <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Hi, Welcome Back
+            <Typography variant="h3" sx={{ px: 5, mt: 16, mb: 1 }}>
+              Merhaba,
             </Typography>
-            <img src="/static/illustrations/illustration_login.png" alt="login" />
+            <Typography variant="h4" sx={{ px: 5, mt: 0 , mb: 1 }}>
+              Tekrar Hoşgeldiniz
+            </Typography>
+            { <img src="/static/illustrations/illustration_login.jpg" alt="login" /> }
           </SectionStyle>
         )}
 
         <Container maxWidth="sm">
           <ContentStyle>
             <Typography variant="h4" gutterBottom>
-              Sign in to Minimal
+              AirBus'a Giriş Yap
             </Typography>
 
-            <Typography sx={{ color: 'text.secondary', mb: 5 }}>Enter your details below.</Typography>
+            <Typography sx={{ color: 'text.secondary', mb: 5 }}>Bilgilerinizi aşağıya giriniz.</Typography>
 
             <AuthSocial />
 
@@ -100,9 +103,9 @@ export default function Login() {
 
             {!smUp && (
               <Typography variant="body2" align="center" sx={{ mt: 3 }}>
-                Don’t have an account?{' '}
+                Hesabınız yok mu?{' '}
                 <Link variant="subtitle2" component={RouterLink} to="/register">
-                  Get started
+                  Yeni hesap oluştur
                 </Link>
               </Typography>
             )}
