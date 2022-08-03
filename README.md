@@ -4,8 +4,7 @@
 - Start the project: `npm run start` / `yarn start`
 
 >LIVE PREVIEW
-
-![softalya-web-projects.vercel.app](softalya-web-projects.vercel.app)
+[softalya-web-projects.vercel.app](softalya-web-projects.vercel.app)
 
 <!-- > Sürücüler -->
 
