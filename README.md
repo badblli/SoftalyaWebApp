@@ -3,11 +3,9 @@
 - Install dependencies: `npm install` / `yarn install`
 - Start the project: `npm run start` / `yarn start`
 
+>LIVE PREVIEW
 
-
-> Dashboard Home Page Preview
-
-![preview](public/static/dashboard_preview.png)
+![softalya-web-projects.vercel.app)](softalya-web-projects.vercel.app)
 
 <!-- > Sürücüler -->
 
