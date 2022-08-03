@@ -22,6 +22,11 @@ const navConfig = [
     icon: getIcon('eva:people-fill'),
   },
   {
+    title: 'Görevler',
+    path: '/dashboard/tasks',
+    icon: getIcon('fluent:clipboard-task-list-rtl-24-filled'),
+  },
+  {
     title: 'Kullanıcı Girişi',
     path: '/login',
     icon: getIcon('eva:lock-fill'),
