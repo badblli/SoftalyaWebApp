@@ -1,5 +1,6 @@
 import { faker } from '@faker-js/faker/locale/tr';
 // @mui
+import { Link as RouterLink } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import { Grid, Container, Typography } from '@mui/material';
 // components
@@ -29,19 +30,19 @@ export default function DashboardApp() {
         </Typography>
 
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={3} component={RouterLink} to="/dashboard/user" style={{ textDecoration: 'none' }}>
             <AppWidgetSummary title="Sürücüler" total={120} icon={'healthicons:truck-driver'} />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={3} component={RouterLink} to="/dashboard/products" style={{ textDecoration: 'none' }}>
             <AppWidgetSummary title="Yolcular" total={100} color="info" icon={'eva:people-fill'} />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={3} component={RouterLink} to="/dashboard/tasks" style={{ textDecoration: 'none' }}>
             <AppWidgetSummary title="Tamamlanan Görevler" total={43} color="warning" icon={'fluent:clipboard-task-list-rtl-24-filled'} />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={3} component={RouterLink} to="/dashboard/tasks" style={{ textDecoration: 'none' }}>
             <AppWidgetSummary title="Reddedilen Görevler" total={32} color="error" icon={'carbon:warning-square-filled'} />
           </Grid>
 
@@ -117,10 +118,13 @@ export default function DashboardApp() {
           <Grid item xs={12} md={6} lg={4}>
             <AppTasks
               title="Görevler"
-              list={[...Array(8)].map(() => ({
-                title: faker.address.streetAddress(),
-                description: faker.address.cityName(),
-              }))}
+              list={[
+                { id: '1', label: faker.address.streetAddress(), },
+                { id: '2', label: faker.address.streetAddress(), },
+                { id: '3', label: faker.address.streetAddress(), },
+                { id: '4', label: faker.address.streetAddress(), },
+                { id: '5', label: faker.address.streetAddress(), },
+              ]}
             />
           </Grid>
 

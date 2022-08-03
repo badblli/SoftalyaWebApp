@@ -78,11 +78,6 @@ function TaskItem({ task, checked, onChange }) {
     console.log('MARK COMPLETE', task.id);
   };
 
-  const handleShare = () => {
-    handleCloseMenu();
-    console.log('SHARE', task.id);
-  };
-
   const handleEdit = () => {
     handleCloseMenu();
     console.log('EDIT', task.id);
@@ -119,24 +114,19 @@ function TaskItem({ task, checked, onChange }) {
           <>
             <MenuItem onClick={handleMarkComplete}>
               <Iconify icon={'eva:checkmark-circle-2-fill'} />
-              Mark Complete
+              Hepsini Seç
             </MenuItem>
 
             <MenuItem onClick={handleEdit}>
               <Iconify icon={'eva:edit-fill'} />
-              Edit
-            </MenuItem>
-
-            <MenuItem onClick={handleShare}>
-              <Iconify icon={'eva:share-fill'} />
-              Share
+              Düzenle
             </MenuItem>
 
             <Divider sx={{ borderStyle: 'dashed' }} />
 
             <MenuItem onClick={handleDelete} sx={{ color: 'error.main' }}>
               <Iconify icon={'eva:trash-2-outline'} />
-              Delete
+              Sil
             </MenuItem>
           </>
         }
