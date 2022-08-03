@@ -5,7 +5,7 @@
 
 >LIVE PREVIEW
 
-![softalya-web-projects.vercel.app)](softalya-web-projects.vercel.app)
+![softalya-web-projects.vercel.app](softalya-web-projects.vercel.app)
 
 <!-- > Sürücüler -->
 
