@@ -118,10 +118,13 @@ export default function DashboardApp() {
           <Grid item xs={12} md={6} lg={4}>
             <AppTasks
               title="Görevler"
-              list={[...Array(8)].map(() => ({
-                title: faker.address.streetAddress(),
-                description: faker.address.cityName(),
-              }))}
+              list={[
+                { id: '1', label: faker.address.streetAddress(), },
+                { id: '2', label: faker.address.streetAddress(), },
+                { id: '3', label: faker.address.streetAddress(), },
+                { id: '4', label: faker.address.streetAddress(), },
+                { id: '5', label: faker.address.streetAddress(), },
+              ]}
             />
           </Grid>
 

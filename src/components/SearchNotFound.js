@@ -12,11 +12,11 @@ export default function SearchNotFound({ searchQuery = '', ...other }) {
   return (
     <Paper {...other}>
       <Typography gutterBottom align="center" variant="subtitle1">
-        Not found
+        Bulunamadı
       </Typography>
       <Typography variant="body2" align="center">
-        No results found for &nbsp;
-        <strong>&quot;{searchQuery}&quot;</strong>. Try checking for typos or using complete words.
+        için sonuç bulunamadı &nbsp;
+        <strong>&quot;{searchQuery}&quot;</strong>. Yazım hatalarını kontrol etmeyi veya tam kelimeleri kullanmayı deneyin.
       </Typography>
     </Paper>
   );

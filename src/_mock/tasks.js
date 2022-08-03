@@ -4,23 +4,9 @@ import { sample } from 'lodash';
 
 // ----------------------------------------------------------------------
 
-const users = [...Array(24)].map(() => ({
-    id: faker.datatype.uuid(),
-    avatarUrl: faker.image.avatar(),
-    name: faker.name.findName(),
-    company: sample([
-        'Antalya Havalimanı',
-    ]),
-    isVerified: faker.datatype.boolean(),
+const tasks = [...Array(24)].map(() => ({
+    name: faker.address.streetAddress(),
     status: sample(['active', 'banned']),
-    role: sample([
-        'Genel Müdür',
-        'Asistan',
-        'Hava Trafik Kontrolörü',
-        'Kabin Memuru',
-        'Güvenlik',
-        'Pilot'
-    ]),
 }));
 
-export default users;
+export default tasks;
